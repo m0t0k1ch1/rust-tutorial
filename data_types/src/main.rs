@@ -3,6 +3,8 @@ fn main() {
     float();
     boolean();
     character();
+    tuple();
+    array();
 }
 
 fn integer() {
@@ -35,5 +37,20 @@ fn character() {
     println!(
         "The value of c, z, heart_eyed_cat is: {}, {}, {}",
         c, z, heart_eyed_cat
+    );
+}
+
+fn tuple() {
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
+    println!("The value of tup is: ({}, {}, {})", tup.0, tup.1, tup.2);
+    let (x, y, z) = tup; // destructuring
+    println!("The value of x, y, z is: {}, {}, {}", x, y, z);
+}
+
+fn array() {
+    let a: [i32; 5] = [1, 2, 3, 4, 5];
+    println!(
+        "The value of a is: [{}, {}, {}, {}, {}]",
+        a[0], a[1], a[2], a[3], a[4]
     );
 }
