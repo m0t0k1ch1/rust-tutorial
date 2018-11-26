@@ -8,14 +8,14 @@ fn main() {
         let x = 3;
         x + 1
     };
-    print_value("x".to_string(), x);
-    print_value("y".to_string(), y);
+    print_value("x", x);
+    print_value("y", y);
 
     let x = five();
-    print_value("x".to_string(), x);
+    print_value("x", x);
 
     let x = plus_one(x);
-    print_value("x".to_string(), x);
+    print_value("x", x);
 }
 
 fn five() -> i32 {
@@ -26,6 +26,6 @@ fn plus_one(x: i32) -> i32 {
     x + 1
 }
 
-fn print_value(name: String, v: i32) {
+fn print_value(name: &str, v: i32) {
     println!("The value of {} is: {}", name, v);
 }
