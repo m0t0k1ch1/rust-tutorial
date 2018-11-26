@@ -1,7 +1,7 @@
 fn main() {
     mutable();
-    shadowing1();
-    shadowing2();
+    shadowing_1();
+    shadowing_2();
 }
 
 fn mutable() {
@@ -11,14 +11,14 @@ fn mutable() {
     println!("The value of x is {}", x);
 }
 
-fn shadowing1() {
+fn shadowing_1() {
     let x = 5;
     let x = x + 1;
     let x = x * 2;
     println!("The value of x is: {}", x);
 }
 
-fn shadowing2() {
+fn shadowing_2() {
     let spaces = "   ";
     let spaces = spaces.len();
     println!("The value of spaces is: {}", spaces);
