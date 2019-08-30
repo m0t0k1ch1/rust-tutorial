@@ -1,5 +1,5 @@
 [package]
-name = "rectangle"
+name = "struct_rectangle"
 version = "0.1.0"
 authors = ["m0t0k1ch1 <m0t0k1ch1.310@gmail.com>"]
 edition = "2018"
